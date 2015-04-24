@@ -1,0 +1,5 @@
+c:\users\alan\documents\visual studio 2012\Projects\Assignment3\Assignment3\bin\Assignment3.dll
+c:\users\alan\documents\visual studio 2012\Projects\Assignment3\Assignment3\bin\Assignment3.pdb
+c:\users\alan\documents\visual studio 2012\Projects\Assignment3\Assignment3\obj\Debug\Assignment3.csprojResolveAssemblyReference.cache
+c:\users\alan\documents\visual studio 2012\Projects\Assignment3\Assignment3\obj\Debug\Assignment3.dll
+c:\users\alan\documents\visual studio 2012\Projects\Assignment3\Assignment3\obj\Debug\Assignment3.pdb

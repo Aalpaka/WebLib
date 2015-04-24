@@ -1,0 +1,78 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Assignment3.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <!-- Bootstrap! -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <!-- Boostrap navigation bar -->
+    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="default.aspx">WebLib</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="default.aspx">Home</a></li>
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Books <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="allBks.aspx">All books</a></li>
+                            <li class="divider"></li>
+                            <li><a href="brwBks.aspx">Borrowed books</a></li>
+                            <li class="divider"></li>
+                            <li><a href="avlbBks.aspx">Available books</a></li>
+
+                        </ul>
+                    </li>
+                 
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><asp:HyperLink ID="myHistory" runat="server"></asp:HyperLink></li>
+                    <li><asp:HyperLink ID="myBooks" runat="server"></asp:HyperLink></li>
+                    <li><asp:HyperLink ID="addBks" runat="server"></asp:HyperLink></li>
+                    <li><asp:HyperLink ID="reg" runat="server"></asp:HyperLink></li>
+                    <li><asp:HyperLink ID="log" runat="server"></asp:HyperLink></li>
+
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </nav>
+
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="formPlaceHolder" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+
+    <!-- Bootstrap footer -->
+   <!-- <div class="footer">
+        <div class="container text-center">
+            <h3>WebTech Assignment 3 --- WebLib</h3> 
+        </div>
+    </div> -->
+
+
+  
+    
+</body>
+</html>
